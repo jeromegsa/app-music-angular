@@ -1,0 +1,18 @@
+.card-header{
+    background-color: rgba(16, 52, 100, 0.82);
+    
+}
+.nav-item{
+    color:white
+}
+.card{
+    max-width: 800px;
+    width: 100%;
+    margin:2rem auto;
+    box-shadow: 1px 1px 9px #0000002a;
+
+}
+.title{
+    font-size: 2rem;
+    font-weight: bold;
+}

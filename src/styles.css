@@ -1,1 +1,106 @@
 /* You can add global styles to this file, and also import other style files */
+/* Style global pour le corps de la page */
+body {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(16, 52, 100, 0.1);
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+  }
+  
+  /* Navbar Styles */
+  nav {
+    display: flex;
+    align-items:flex-start;
+    justify-content:flex-start;
+    gap: 20px;
+    background-color:rgb(16, 52, 100);
+    height: 80px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
+    
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  nav  li  a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s, transform 0.3s; 
+    float: left;
+  }
+  
+  nav  li  a:hover {
+    color: #ffd700;
+    transform: scale(1.1);
+  }
+  
+  /* Style global pour tous les champs de saisie */
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  input[type="number"],
+  input[type="date"],
+  textarea {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: #fff;
+      font-size: 1rem;
+      color: #333;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: border-color 0.3s, box-shadow 0.3s, background-color 0.3s;
+      outline: none;
+  }
+  
+  input[type="text"]:focus,
+  input[type="password"]:focus,
+  input[type="email"]:focus,
+  input[type="number"]:focus,
+  input[type="date"]:focus,
+  textarea:focus {
+      border-color: rgb(16, 52, 100);
+      background-color: #fff;
+      box-shadow: 0 0 8px rgba(16, 52, 100, 0.25);
+  }
+  
+  input[type="text"]::placeholder,
+  input[type="password"]::placeholder,
+  input[type="email"]::placeholder,
+  input[type="number"]::placeholder,
+  input[type="date"]::placeholder,
+  textarea::placeholder {
+      color: #aaa;
+      font-style: italic;
+  }
+  
+  /* Pour les boutons qui sont stylisés comme des champs de saisie */
+  input[type="submit"],
+  input[type="button"],
+  button {
+      width: auto;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      background-color: rgb(16, 52, 100);
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  input[type="submit"]:hover,
+  input[type="button"]:hover,
+  button:hover {
+      background-color: #003366; /* Une couleur légèrement plus foncée pour le survol */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }

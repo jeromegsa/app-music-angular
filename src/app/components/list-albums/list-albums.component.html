@@ -1,0 +1,21 @@
+
+<div class="card text-left my-4" *ngFor="let album of albums; let i=index">
+  <div class="card-header">
+    <ul class="nav nav-tabs card-header-tabs">
+      <li class="nav-item">
+        <p>{{album.ref}}</p>
+      </li>
+    </ul>
+  </div>
+  <div class="card-body">
+   <p class="title">{{album.title}}</p>
+    <p class="card-text">
+        <p>{{album.description}}</p>    
+  <p >
+    <span class="mx-2" *ngFor="let tag of album.tags let i=index" ><button>{{tag}}</button></span>
+  </p>
+</div>
+
+
+</div>
+
