@@ -12,7 +12,7 @@ body {
     box-sizing: border-box;
     color: #333;
   }
-  
+
   /* Navbar Styles */
   nav {
     display: flex;
@@ -23,26 +23,26 @@ body {
     height: 80px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 0 20px;
-    
+
   }
-  
+
   li {
     list-style: none;
   }
-  
+
   nav  li  a {
     font-size: 1.2rem;
     text-decoration: none;
     color: white;
-    transition: color 0.3s, transform 0.3s; 
+    transition: color 0.3s, transform 0.3s;
     float: left;
   }
-  
+
   nav  li  a:hover {
     color: #ffd700;
     transform: scale(1.1);
   }
-  
+
   /* Style global pour tous les champs de saisie */
   input[type="text"],
   input[type="password"],
@@ -61,7 +61,7 @@ body {
       transition: border-color 0.3s, box-shadow 0.3s, background-color 0.3s;
       outline: none;
   }
-  
+
   input[type="text"]:focus,
   input[type="password"]:focus,
   input[type="email"]:focus,
@@ -72,7 +72,7 @@ body {
       background-color: #fff;
       box-shadow: 0 0 8px rgba(16, 52, 100, 0.25);
   }
-  
+
   input[type="text"]::placeholder,
   input[type="password"]::placeholder,
   input[type="email"]::placeholder,
@@ -82,7 +82,7 @@ body {
       color: #aaa;
       font-style: italic;
   }
-  
+
   /* Pour les boutons qui sont stylisés comme des champs de saisie */
   input[type="submit"],
   input[type="button"],
@@ -97,10 +97,38 @@ body {
       cursor: pointer;
       transition: background-color 0.3s, box-shadow 0.3s;
   }
-  
+
   input[type="submit"]:hover,
   input[type="button"]:hover,
   button:hover {
       background-color: #003366; /* Une couleur légèrement plus foncée pour le survol */
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
+
+  form{
+    display: flex;
+    margin-top: 50px;
+
+    margin: 0 auto;;
+    margin-top: 50px;
+
+}
+form>input{
+    width:800px
+}
+
+
+.nav-item{
+  color:white
+}
+.card{
+  max-width: 800px;
+  width: 100%;
+  margin:2rem auto;
+  box-shadow: 1px 1px 9px #0000002a;
+
+}
+.title{
+  font-size: 2rem;
+  font-weight: bold;
+}

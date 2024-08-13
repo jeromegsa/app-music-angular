@@ -7,7 +7,7 @@ import { Album } from '../album';
 })
 
 export class AlbumsService {
-  albums: Album[]=[]
+  albums: Album[]=ALBUMS
 
   constructor() { }
 
@@ -16,7 +16,9 @@ export class AlbumsService {
   }
 
   searchAlbums(letter:string){
+    console.log(letter);
+
    return  this.albums.filter(el=>el.title.includes(letter))
-     
+
   }
 }

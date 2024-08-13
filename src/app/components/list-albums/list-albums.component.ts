@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,Input } from '@angular/core';
 import { AlbumsService } from '../../services/albums.service';
 import { Album } from '../../album';
 
@@ -11,22 +11,29 @@ import { Album } from '../../album';
 
 export class ListAlbumsComponent {
   albums:Album[]=[]
+  @Input ()letter:string="";
   constructor( public albumService:AlbumsService){}
   ngOnInit(){
       this.albums=this.albumService.getAlbums()
       console.log(this.albums);
-      
+
+
+     }
+     searchAlbums(){
+      this.albums=this.albumService.searchAlbums(this.letter)
+     console.log(this.letter);
+     console.log(this.albums);
+
+
+
   }
 
-  letter:string="";
-  
 
- 
+
+
+
   // @Output() letterEvent=new EventEmitter
 
-  searchAlbum(letter:string){
-    this.albums=this.albumService.searchAlbums(letter)
 
-  }
 
 }

@@ -1,6 +1,9 @@
-<p>home works!</p>
+
 
 <app-nav></app-nav>
-<app-search-albums ></app-search-albums>
-<app-list-albums></app-list-albums>
+
+
+<app-search-albums (letterEvent)="recupLetter($event)"></app-search-albums>
+<app-list-albums [letter]="letter"></app-list-albums>
 <app-aside></app-aside>
+

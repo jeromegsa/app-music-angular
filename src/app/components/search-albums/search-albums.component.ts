@@ -10,14 +10,14 @@ import { AlbumsService } from '../../services/albums.service';
 export class SearchAlbumsComponent {
   letter?:string;
   albums:Album[]=[]
-
+@Output () letterEvent=new EventEmitter
   constructor(public albumService: AlbumsService){}
   // @Output() letterEvent=new EventEmitter
 
-  searchAlbum(letter:string){
-   this.albums= this.albumService.searchAlbums(letter)
-    console.log(this.albums);
-    
+
+
+  sendLetter (){
+    this.letterEvent.emit(this.letter)
   }
   // sendLetter(){
   //    this.letterEvent.emit(this.letter)

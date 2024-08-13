@@ -11,6 +11,7 @@ import { LoginComponent } from './components/auth/login/login.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { ListAlbumsComponent } from './components/list-albums/list-albums.component';
 import { FormsModule } from '@angular/forms';
+import { DetailsComponentsComponent } from './components/details-components/details-components.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FormsModule } from '@angular/forms';
     SearchAlbumsComponent,
     LoginComponent,
     PageNotFoundComponent,
-    ListAlbumsComponent
+    ListAlbumsComponent,
+    DetailsComponentsComponent
   ],
   imports: [
     BrowserModule,
