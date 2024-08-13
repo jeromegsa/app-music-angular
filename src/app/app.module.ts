@@ -12,6 +12,7 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { ListAlbumsComponent } from './components/list-albums/list-albums.component';
 import { FormsModule } from '@angular/forms';
 import { DetailsComponentsComponent } from './components/details-components/details-components.component';
+import { TimerComponent } from './components/timer/timer.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { DetailsComponentsComponent } from './components/details-components/deta
     LoginComponent,
     PageNotFoundComponent,
     ListAlbumsComponent,
-    DetailsComponentsComponent
+    DetailsComponentsComponent,
+    TimerComponent
   ],
   imports: [
     BrowserModule,

@@ -1,7 +1,9 @@
 
-<input type="text" [(ngModel)]="letter">
+<div class="input mt-3" >
+  <input type="text" [(ngModel)]="letter">
 
   <button (click)="searchAlbums()">SEARCH</button>
+</div>
 <div class="card text-left my-4" *ngFor="let album of albums; let i=index">
   <div class="card-header">
     <ul class="nav nav-tabs card-header-tabs">
