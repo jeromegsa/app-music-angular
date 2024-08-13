@@ -5,7 +5,14 @@
   align-content: space-between;
   width: 900px; */
 }
-ul {
+nav {
   display: flex;
-  gap: 25px
+  gap: 25px;
+  justify-content: space-around;
+  align-content: space-around;
+}
+ul
+{
+  display: flex;
+  gap:25px;
 }

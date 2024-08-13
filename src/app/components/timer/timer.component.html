@@ -1,3 +1,4 @@
-<div class="timer">
-  {{ minutes + "  "+ secondes }}
-</div>
+<div class="timer text-right">
+  <p *ngIf="secondes>10 ">{{"00"+ ":"+ "0"+ minutes +":"+ secondes }}</p>
+  @if (secondes<10 ) { {{"00"+ ":"+"0" +  minutes + ':' + "0" +  secondes}} }
+ </div>
