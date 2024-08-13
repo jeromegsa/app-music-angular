@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
+import { Album, List } from '../../album';
 
 @Component({
   selector: 'app-home',
@@ -9,10 +10,10 @@ import { Router } from '@angular/router';
 export class HomeComponent {
   constructor(private router: Router) {}
 
-  letter:string ="";
-  recupLetter(x:string){
-    this.letter=x
-    console.log(this.letter);
+  tab:List[] =[];
+  recupX(x:List[]){
+    this.tab=x
+    console.log(this.tab);
 
 
   }

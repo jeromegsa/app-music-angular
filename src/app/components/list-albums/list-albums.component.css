@@ -7,7 +7,7 @@
   gap:15px
 }
  /* Style global pour tous les champs de saisie */
- input[type="text"],
+ /* input[type="text"],
  input[type="password"],
  input[type="email"],
  input[type="number"],
@@ -23,13 +23,13 @@
      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
      transition: border-color 0.3s, box-shadow 0.3s, background-color 0.3s;
      outline: none;
- }
+ } */
 
  input[type="text"]:focus,
- input[type="password"]:focus,
+ /* input[type="password"]:focus,
  input[type="email"]:focus,
  input[type="number"]:focus,
- input[type="date"]:focus,
+ input[type="date"]:focus, */
  textarea:focus {
      border-color: rgb(16, 52, 100);
      background-color: #fff;
@@ -48,8 +48,8 @@
 
  /* Pour les boutons qui sont stylisés comme des champs de saisie */
  input[type="submit"],
- input[type="button"],
- button {
+ input[type="button"]
+  {
      width: auto;
      padding: 12px 20px;
      border: none;

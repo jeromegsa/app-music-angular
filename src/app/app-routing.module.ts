@@ -8,10 +8,14 @@ import { AsideComponent } from './components/aside/aside.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: 'home', component: HomeComponent },
+  { path: 'home', component: HomeComponent,
+    children:[
+      {path:'albums/:id', component:AsideComponent}
+    ]
+   },
   { path: 'login', component: LoginComponent },
-  // {path:'albums/details/:id',component:DetailsComponentsComponent},
   {path:'album/:id',component:DetailsComponentsComponent},
+
   { path: '**', component: PageNotFoundComponent },
 ];
 

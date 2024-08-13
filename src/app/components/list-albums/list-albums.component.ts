@@ -1,6 +1,7 @@
-import { Component,Input } from '@angular/core';
+import { Component,EventEmitter,Input, Output } from '@angular/core';
 import { AlbumsService } from '../../services/albums.service';
-import { Album } from '../../album';
+import { Album, List } from '../../album';
+import { ALBUM_LISTS, ALBUMS } from '../../mocks';
 
 @Component({
   selector: 'app-list-albums',
@@ -10,8 +11,13 @@ import { Album } from '../../album';
 
 
 export class ListAlbumsComponent {
-  albums:Album[]=[]
+  albums:Album[]=ALBUMS
+  id:number=0
   @Input ()letter:string="";
+  lists:List[]=ALBUM_LISTS;
+    x:List[]=[]
+
+ @Output () xEvent=new EventEmitter
   constructor( public albumService:AlbumsService){}
   ngOnInit(){
       this.albums=this.albumService.getAlbums()
@@ -23,6 +29,14 @@ export class ListAlbumsComponent {
       this.albums=this.albumService.searchAlbums(this.letter)
      console.log(this.letter);
      console.log(this.albums);
+     }
+
+     afficherList(id:string){
+     this.x= this.lists.filter((el)=>
+        parseInt(id)==parseInt(el.id)
+
+      )
+      this.xEvent.emit(this.x)
 
 
 

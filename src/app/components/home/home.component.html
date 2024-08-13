@@ -1,9 +1,11 @@
-
-
 <app-nav></app-nav>
 
+<div class="content">
+  <div class="aside mt-3">
+    <app-aside [tabList]=tab></app-aside>
+  </div>
+  <div><app-search-albums ></app-search-albums>
+    <app-list-albums (xEvent)="recupX($event)"></app-list-albums>
+  </div>
 
-<app-search-albums (letterEvent)="recupLetter($event)"></app-search-albums>
-<app-list-albums [letter]="letter"></app-list-albums>
-<app-aside></app-aside>
-
+</div>
